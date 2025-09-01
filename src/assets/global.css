@@ -1,0 +1,149 @@
+/* Global Styles for Todo App */
+
+body {
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #f7f8fa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 24px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #1a202c;
+  margin-top: 0;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  padding: 8px 12px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #2563eb;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #e2e8f0;
+  border-radius: 8px;
+}
+
+@media (max-width: 700px) {
+  #app {
+    padding: 16px 4px;
+    max-width: 98vw;
+  }
+}
+
+ul{
+  padding-left: 0%;
+}
+
+
+
+
+.todos-container {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 24px 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  margin: 24px 0;
+}
+.todos-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #2563eb;
+}
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+.todo-main {
+  display: flex;
+  flex-direction: column;
+}
+.todo-title {
+  font-weight: 600;
+  color: #1a202c;
+  font-size: 1.1rem;
+}
+.todo-desc {
+  color: #64748b;
+  font-size: 0.97rem;
+}
+.todo-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.todo-prio {
+  font-size: 0.95rem;
+  color: #f59e42;
+  margin-bottom: 6px;
+}
+.btn-complete {
+  background: #22c55e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-complete:hover {
+  background: #16a34a;
+}
+@media (max-width: 600px) {
+  .todos-container {
+    padding: 12px 2px;
+  }
+  .todo-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 6px;
+  }
+  .todo-meta {
+    align-items: flex-start;
+    margin-top: 8px;
+  }
+}
