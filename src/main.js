@@ -6,8 +6,8 @@ import axios from 'axios';
 const app = createApp({
     data() {
         return {
-            CLIENT_ID: "801910918968-if6thmgktnkqnuuc1pgi58l4bv3h5lui.apps.googleusercontent.com",
-            API_KEY: "AIzaSyAmhTk3AtqKEXjZW7rPGRFyIjwrXMw-pPE",
+            CLIENT_ID: import.meta.env.VITE_CLIENT_ID,
+            API_KEY: import.meta.env.VITE_API_KEY,
             DISCOVERY_DOC : "https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest",
             SCOPES : "https://www.googleapis.com/auth/calendar",
             tokenClient : undefined,
