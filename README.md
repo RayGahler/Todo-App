@@ -67,13 +67,3 @@ A modern, full-stack Todo application built with Vue.js (frontend) and Node.js (
    ```
 4. The backend will run on `http://localhost:3000` by default.
 
-## API Endpoints
-- `GET /api/getTodos` — Fetch all todos
-- `POST /api/saveFile` — Save todos (called automatically when leaving the site)
-
-## Customization
-- Update Google API credentials in `src/main.js` as needed.
-- Modify UI components in `src/components/` for custom features or styles.
-
-## License
-MIT
